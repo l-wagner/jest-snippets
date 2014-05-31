@@ -1,0 +1,61 @@
+{
+	"scope": "source.js",
+
+	"completions": [
+
+		// the jest object
+		{ "trigger": "jest.autoMockOff", "contents": "jest.autoMockOff();" },
+		{ "trigger": "jest.autoMockOn", "contents": "jest.autoMockOn();" },
+		{ "trigger": "jest.clearAllTimers", "contents": "jest.clearAllTimers();" },
+		{ "trigger": "jest.dontMock", "contents": "jest.dontMock('${1:moduleName}');" },
+		{ "trigger": "jest.genMockFromModule", "contents": "jest.genMockFromModule(${1:moduleObj});" },
+		{ "trigger": "jest.genMockFunction", "contents": "jest.genMockFunction();" },
+		{ "trigger": "jest.mock", "contents": "jest.mock(moduleName);" },
+		{ "trigger": "jest.runAllTicks", "contents": "jest.runAllTicks();" },
+		{ "trigger": "jest.runAllTimers", "contents": "jest.runAllTimers();" },
+		{ "trigger": "jest.runOnlyPendingTimers", "contents": "jest.runOnlyPendingTimers();" },
+		{ "trigger": "jest.setMock", "contents": "jest.setMock(moduleName, moduleExports);" },
+
+		// mock functions
+		{ "trigger": "jest: mock", "contents": "mock" },
+		{ "trigger": "jest: mock.calls", "contents": "mock.calls" },
+		{ "trigger": "jest: mock.instances", "contents": "mock.instances" },
+		{ "trigger": "jest: mock.mockClear", "contents": "mock.mockClear();" },
+		{ "trigger": "jest: mock.mockImplementation", "contents": "mock.mockImplementation($1);" },
+		{ "trigger": "jest: mock.mockImpl", "contents": "mock.mockImpl($1);" },
+		{ "trigger": "jest: mock.mockReturnThis", "contents": "mock.mockReturnThis();" },
+		{ "trigger": "jest: mock.mockReturnValue", "contents": "mock.mockReturnValue($1);" },
+		{ "trigger": "jest: mock.mockReturnValueOnce", "contents": "mock.mockReturnValueOnce($1);" },
+
+		// globally injected variables
+		{ "trigger": "jest: afterEach", "contents": "afterEach($1);" },
+		{ "trigger": "jest: beforeEach", "contents": "beforeEach($1);" },
+		{ "trigger": "jest: describe", "contents": "describe('$1', function() {\n\t$0\n});" },
+		{ "trigger": "jest: it", "contents": "it('should $1', function() {\n\t$0\n});" },
+		{ "trigger": "jest: it.only", "contents": "it.only('should $1', function() {\n\t$0\n});" },
+		"jest",
+		{ "trigger": "jest: pit", "contents": "pit('should $1', function() {\n\t$0\n});" },
+		{ "trigger": "jest: require.requireActual", "contents": "require.requireActual('$1');" },
+		{ "trigger": "jest: xdescribe", "contents": "xdescribe('$1', function() {\n\t$0\n});" },
+		{ "trigger": "jest: xit", "contents": "xit('should $1', function() {\n\t$0\n});" },
+
+		// expect(value)
+		"not",
+		{ "trigger": "jest: toThrow", "contents": "toThrow(${1:message});" },
+		{ "trigger": "jest: toEqual", "contents": "toEqual(${1:value});" },
+		{ "trigger": "jest: toBeFalsy", "contents": "toBeFalsy();" },
+		{ "trigger": "jest: toBeTruthy", "contents": "toBeTruthy();" },
+		{ "trigger": "jest: toBeNull", "contents": "toBeNull();" },
+		{ "trigger": "jest: toBeUndefined", "contents": "toBeUndefined();" },
+		{ "trigger": "jest: toBeDefined", "contents": "toBeDefined();" },
+		{ "trigger": "jest: toMatch", "contents": "toMatch(${1:regexp});" },
+		{ "trigger": "jest: toContain", "contents": "toContain(${1:string});" },
+		{ "trigger": "jest: toBeCloseTo", "contents": "toBeCloseTo(${1:number}, ${2:delta});" },
+		{ "trigger": "jest: toBeGreaterThan", "contents": "toBeGreaterThan(${1:number});" },
+		{ "trigger": "jest: toBeLessThan", "contents": "toBeLessThan(${1:number});" },
+		{ "trigger": "jest: toBeCalled", "contents": "toBeCalled();" },
+		{ "trigger": "jest: toBeCalledWith", "contents": "toBeCalledWith(${1:argument}, ${2:um}, {3:ents});" },
+		{ "trigger": "jest: lastCalledWith", "contents": "lastCalledWith(${1:argument}, ${2:um}, {3:ents});" },
+
+	]
+}
