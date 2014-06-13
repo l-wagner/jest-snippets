@@ -1,7 +1,7 @@
 Jest Snippets for Sublime Text
 ===================
 
-Sublime Text Snippets for Jest, the unit testing framework by Facebook
+Jest complections for Sublime Text. Jest is a unit testing framework by Facebook.
 
 
 LICENSE
